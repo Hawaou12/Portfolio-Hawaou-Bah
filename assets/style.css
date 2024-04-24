@@ -342,6 +342,59 @@ background: var(--second-bg-color);
     padding: 50px 20px;
 }
 
+.formation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.formation .formation-row{
+display: flex;
+flex-wrap: wrap;
+gap: 5rem;
+}
+
+.formation-colum .title{
+font-size: 2.5rem;
+margin: 0 0 1.5rem 2rem;
+}
+
+.formation-row .formation-colum{
+    flex: 1 1 40rem;
+}
+
+.formation-colum .box-formation{
+    border-left: .2rem solid var(--main-color);
+}
+
+.box-formation .formation-content{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.formation-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+}
+
+.formation-content .content .année{
+font-size: 1.5rem;
+color: var(--main-color);
+padding-bottom: .5rem;
+}
+
+.formation-content .content .année i{
+    padding-right: .5rem;
+}
+
+
+
 #competences {
     /* background-color: #e6e6e6; */
     padding: 50px 20px;
