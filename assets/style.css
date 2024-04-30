@@ -114,6 +114,10 @@ section {
     line-height: 1.3;
 }
 
+.home-contenair h1 span{
+    color: var(--text-color);
+}
+
 .home-contenair .animation{
     position: relative;
     width: 32.8rem;
@@ -136,7 +140,7 @@ section {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 34rem;
+    width: 32rem;
     height: 5rem;
     /* background: #333;
     /* color: #fff;
@@ -246,7 +250,6 @@ transition: .5s;
     width: 45%;
     height: 100%;
     background: transparent;
- 
 transition: 3s;
 }
 
@@ -254,17 +257,18 @@ transition: 3s;
     background: var(--bg-color);
     opacity: .8;
 }
-/* Style spécifique pour chaque section */
-#home {
-    /* background-color: #f2f2f2; */
-    padding: 50px 20px;
-    text-align: center;
-}
 
-#about {
-    /* background-color: #e6e6e6; */
-    padding: 50px 20px;
-}
+/* Style spécifique pour chaque section */
+/* #home {
+    /* background-color: #f2f2f2; */
+    /* padding: 50px 20px;
+    text-align: center; */
+/* } */ 
+
+/* #about {
+    background-color: #e6e6e6; */
+    /* padding: 50px 20px;
+} */
 
 .about{
     display: flex;
@@ -277,14 +281,16 @@ transition: 3s;
 }
 
 .heading{
-    font-size: 5rem;
-    margin-bottom: 3rem;
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
+
 span{
     color: var(--main-color);
 
 }
+
 /* Style pour la photo dans la section About */
 .img-about {
     position: relative;
@@ -337,10 +343,11 @@ span{
 .btn-box .btns a ::before{
 background: var(--second-bg-color);
 }
+/* 
 #formation {
     /* background-color: #f2f2f2; */
-    padding: 50px 20px;
-}
+    /* padding: 50px 20px;
+} */ 
 
 .formation{
     display: flex;
@@ -374,7 +381,6 @@ margin: 0 0 1.5rem 2rem;
     position: relative;
     padding-left: 2rem;
 }
-
 
 .box-formation .formation-content::before{
     content: '';
@@ -456,7 +462,7 @@ margin: 0 0 1.5rem;
     position: relative;
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
-    padding: .4rem 1.5rem;
+    padding: .5rem 1.5rem;
     z-index: 1;
     overflow: hidden;
 }
@@ -473,13 +479,17 @@ margin: 0 0 1.5rem;
     transition: .5s;
 }
 
+.bxs-calendar:before {
+    content: "\ed00";
+    margin: .5rem;
+}
 
 .box-competence .competence-content:hover::before{
     width: 100%;
 }
 
 .competence-content .progret h3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -490,11 +500,11 @@ margin: 0 0 1.5rem;
 
 
 .competence-content .progret .star{
-    height: 2.3rem;
+    height: 2.5rem;
     border-radius: .6rem;
     border: .2rem solid var(--main-color);
     padding: .5rem;
-    margin: 0.4rem 0;
+    margin: 1rem 0;
 }
 
 
@@ -559,38 +569,168 @@ margin: 0 0 1.5rem;
 .competence-content .progret:nth-child(7) .star span{
     width: 95%;
 }
-
+/* 
 #competences {
     /* background-color: #e6e6e6; */
-    padding: 50px 20px;
-}
+    /* padding: 50px 20px;
+} */ 
 
 
-.project {
+.projects {
+    display: flex;
     justify-content: center; /* Centrer les projets horizontalement */
-    display: inline-block; /* Permettre aux projets d'être alignés horizontalement */
-    text-align: center; /* Centrer le contenu */
-    justify-content: space-around; /* Aligner les projets avec un espacement équivalent */
-}
+    align-items: center; /* Centrer le contenu */
+flex-direction: column; 
+/* background: var(--bg-color); */
+padding-bottom: 5rem; 
+ } 
 
-.project img {
-    width: 150px; /* Taille de l'image */
-    height: 150px; /* Taille de l'image */
-    border-radius: 50%; /* Rendre l'image circulaire */
-    margin: 10px; /* Marge entre les images */
-}
+ .projects .projet-row{
+display: flex;
+gap: 1.2rem;
+ }
 
+.projet{
+    flex: 1 1 30rem;
+    /* margin: 0 0 1rem 1rem; */
+ }
+
+ .title{
+    font-size: 1.5rem;
+ }
+ 
+
+ .projet-content{
+    position: relative;
+    /* padding-left: 2rem; */
+ }
+
+ .projet-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    border-bottom: 2rem;
+overflow: hidden;
+ }
+
+ .projet-content .content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    z-index: -1;
+
+ }
+
+ .projet-content .content p{
+   font-size: 1.4rem;
+   /* padding-top: .5rem; */
+ }
+
+/* .projet{
+    position: relative;
+    display: flex;
+    width: 35rem; 
+    height: 35rem; 
+    border-radius: 50%; 
+    justify-content: center;
+    align-items: center;
+} */
+
+.projet img{
+    width: 65%; /* Taille de l'image */
+    height: 75%;
+    border-radius: 80%;
+    margin: 1.5rem 0 1.5rem 0;
+    object-fit: cover;
+    border: .2rem solid var(--main-color);
+}
+/* 
 #contact {
     /* background-color: #f2f2f2; */
-    padding: 50px 20px;
+    /* padding: 50px 20px;
+} */ */
+
+.contact{
+    padding-bottom: 7rem;
+
 }
 
 /* Style pour le formulaire de contact */
-form label {
-    display: block;
-    margin-bottom: 5px;
+.contact form{
+    max-width:70rem;
+    margin: 0 auto;
+    text-align: center;
 }
 
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-file{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+
+.contact form .input-box .input-file input,
+.contact form .textarea-file textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+
+.contact form .input-box .input-file input::placeholder,
+.contact form .textarea-file textarea::placeholder{
+    color: var(--text-color);
+}
+
+.contact form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+/* section validation contact  */
+.contact form .input-box .input-file input:focus~ .focus,
+.contact form .input-box .input-file input:valid~ .focus,
+.contact form .textarea-file textarea:focus~ .focus,
+.contact form .textarea-file textarea:valid~ .focus{
+    width: 100%;
+}
+
+.contact form .textarea-file{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+.contact form .textarea-file textarea{
+    resize: none;
+}
+
+.contact form .btn-box.btns .btn{
+    cursor: pointer;
+}
+/* 
 form input,
 form textarea {
     width: 100%;
@@ -607,18 +747,58 @@ form button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+}  */
+
+.footers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--second-bg-color);
+    padding: 2rem 9%;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+.footer p{
+    font-size: 1.6rem;
 }
 
 /* Style pour la flèche */
-footer a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
+.icon-footer a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;   
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.icon-footer a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.icon-footer a:hover::before{
+    width: 100%;
+}
+
+.icon-footer a i{
+    font-size: 2.4rem;
+    color: var(--bg-color);
+transition: .5s;
+}
+
+.icon-footer a:hover i{
+    color: var(--main-color);
 }
