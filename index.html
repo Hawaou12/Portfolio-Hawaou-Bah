@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
@@ -20,10 +20,11 @@
 <body>
 
     <header class="header">
-        <div id="logo">
-            <a href="#">Hawaou</a>
+        <div class="logo">
+            <a href="#">Hawaou<span class="animations" style="--i:1;"></span></a>
         </div>
-        <div class="bx bx-menu" id="menu"></div>
+        <div class="bx bx-menu" id="menu"> <span class="animations" style="--i:2;"></span></div>
+
         <nav class="navbar">
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
@@ -33,62 +34,77 @@
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <span class="active-nav"></span>
+            <span class="animations" style="--i:2;"></span>
         </nav>
     </header>
 
     <main>
-        <section class="home" id="home">
+        <section class="home row-animation" id="home">
             <div class="home-contenair">
-                <h1>Bonjour, je suis <span>Hawaou Bah</span></h1>
+                <h1>Bonjour, je suis <span>Hawaou Bah</span> <span class="animations" style="--i:2;"></span></h1>
                 <div class="animation">
-                    <h3>developpeur web</h3>
+                    <h3>developpeuse web</h3>
+                    <span class="animations" style="--i:3;"></span>
                 </div>
+
                 <!-- Présentation personnelle -->
                 <p>Organisée, rigoureuse, discrète.
                     Sens de l'écoute, de la communication et le sens développé du relationnel.
+                    <span class="animations" style="--i:4;"></span>
                 </p>
 
-                <div class="btn-box">
-                    <a href="#" class="btn">Hire Me</a>
-                    <a href="#" class="btn">Let's Talk</a>
-                </div>
 
                 <!-- Logos des réseaux sociaux -->
                 <div class="home-p">
                     <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/hawaou-bah-164b8155/"><i class='bx bxl-linkedin'></i></a>
+                    <span class="animations" style="--i:6;"></span>
                 </div>
                 <div class="imgHover">
+                    <img class="homeImg" src="./assets/image/IMG_0771.jpg" alt="Photo de profil">
+                    <span class="animations " style="--i:7;"></span>
                 </div>
+            </div>
         </section>
 
         <!-- section design about-->
         <section class="about" id="about">
-            <h2 class="heading">About <span></span>Me</h2>
+            <h2 class="heading">About <span></span>Me <span class="animations scroll" style="--i:1;"></span></h2>
             <div class="img-about">
                 <img src="./assets/image/IMG_0771.jpg" alt="Photo de profil">
                 <span class="circle-img"></span>
+                <span class="animations scroll" style="--i:2;"></span>
             </div>
             <div class="about-content">
-                <h3>Développeur Web!</p3>
-                    <p>yidhzos,pvngiurnçoivhjbcuyguibhxu
-                        bajkflzoflzpflkmfl,dflmkmjfclpmojfllm
-                        fijzfhojzeirjrpeoptophjgohiheoihoeigh
+                <h3>Développeur Web ! <span class="animations scroll" style="--i:3;"></span></p3>
+                    <p>Je suis Hawaou, une développeuse web passionnée et créative qui vient de commencer son voyage dans le monde de la programmation.
+                        <span class="animations scroll" style="--i:4;"></span>
+                    </p>
+                    <p>J'ai découvert ma passion pour le développement web il y a peu de temps et depuis, je me suis plongée tête baissée dans l'apprentissage des langages et des technologies nécessaires pour créer des sites web attrayants et fonctionnels.
+                        <span class="animations scroll" style="--i:4;"></span>
+                    </p>
+                    <p>Mes objectifs futurs:</p>
+                    <p>Approfondir mes connaissances en développement web en explorant des langages et des frameworks plus avancés.
+                        <span class="animations scroll" style="--i:4;"></span>
+                    </p>
+                    <p>Contribuer à des projets open source pour apprendre en collaborant avec d'autres développeurs et en partageant mes propres idées.
+                        <span class="animations scroll" style="--i:4;"></span>
                     </p>
                     <div class="btn-box btns">
                         <a href="#" class="btn">Read More</a>
+                        <span class="animations scroll" style="--i:5;"></span>
                     </div>
             </div>
         </section>
 
         <!-- section formation -->
         <section class="formation" id="formation">
-            <h2 class="heading">Mon <span>parcourt</span></h2>
+            <h2 class="heading">Mon <span>parcourt</span><span class="animations scroll" style="--i:1;"></span></h2>
             <!-- Liste des formations -->
             <div class="formation-row">
                 <div class="formation-colum">
-                    <h3 class="title">Formation:</h3>
+                    <h3 class="title">Formation:<span class="animations scroll" style="--i:2;"></span></h3>
                     <div class="box-formation">
                         <div class="formation-content">
                             <div class="content">
@@ -132,12 +148,13 @@
                                 <p>Lycée Providence, Conakry (Guinée)</p>
                             </div>
                         </div>
+                        <span class="animations scroll" style="--i:3;"></span>
                     </div>
                 </div>
 
                 <!-- Liste des expériences -->
                 <div class="formation-colum">
-                    <h3 class="title">Expériences:</h3>
+                    <h3 class="title">Expériences:<span class="animations scroll" style="--i:4;"></span></h3>
                     <div class="box-formation">
                         <div class="formation-content">
                             <div class="content">
@@ -156,8 +173,7 @@
                                     Tenue de la caisse
                                     Tenue des inventaires, gestion des stocks, installation des produits en rayon
                                     Gestion de flux de clients en caisse, renseigner sur les services complémentaires à
-                                    la
-                                    vente</p>
+                                    la vente</p>
                             </div>
                         </div>
                         <div class="formation-content">
@@ -179,6 +195,7 @@
                                     Réassort du magasin et réception des colis ‐ Étiquetage, mise en rayon, facing</p>
                             </div>
                         </div>
+                        <span class="animations scroll" style="--i:5;"></span>
                     </div>
                 </div>
             </div>
@@ -186,10 +203,11 @@
 
         <!-- Liste des compétences -->
         <section class="competences" id="competences">
-            <h2 class="heading">Mes <span>Compétences</span></h2>
+            <h2 class="heading">Mes <span>Compétences</span><span class="animations scroll" style="--i:1;"></span></h2>
             <div class="competence-row">
                 <div class="competence-colum">
-                    <h3 class="title">Compétences Informatiques</h3>
+                    <h3 class="title">Compétences Informatiques<span class="animations scroll" style="--i:2;"></span>
+                    </h3>
                     <div class="box-competence">
                         <div class="competence-content">
                             <div class="progret">
@@ -209,10 +227,12 @@
                                 <div class="star"><span></span></div>
                             </div>
                         </div>
+                        <span class="animations scroll" style="--i:3;"></span>
                     </div>
                 </div>
+
                 <div class="competence-colum">
-                    <h3 class="title"> Autres Compétences </h3>
+                    <h3 class="title"> Autres Compétences <span class="animations scroll" style="--i:2;"></span></h3>
                     <div class="box-competence">
                         <div class="competence-content">
                             <div class="progret">
@@ -244,118 +264,232 @@
                                 <h3>Pack Office <span>75%</span></h3>
                                 <div class="star"><span></span></div>
                             </div>
-
                         </div>
+                        <span class="animations scroll" style="--i:3;"></span>
                     </div>
                 </div>
+
             </div>
         </section>
 
 
         <!-- liste des différents projets  -->
         <section class="projects" id="projects">
-            <h2 class="heading">Mes <span>Projets</span></h2>
+
+            <h2 class="heading">Mes <span>Projets</span><span class="animations scroll" style="--i:1;"></span></h2>
 
             <div class="projet-row">
-                <div class="projet">
-                    <a href=" https://github.com/Hawaou12/kasa.git" target="_blank">
-                        <img src="/assets/image/kasa.jpg" alt="">
-                    </a>
-                        <div class="projet-content">
-                            <div class="content">
-                                <h3 class="title">Kasa</h3>
-                                <p>Description du projet 1...
-                                    ifjnosd,klcpqlmksjovdkfmcqlsjd
-                                </p>
-                            </div>
-                    </div>
-                </div>
+                <div class="projet-colum">
 
-
-
-
-                <div class="projet">
-                    
                     <a href="https://hawaou12.github.io/ohmyfood/" target="_blank">
                         <img src="./assets/image/ohmyfood.jpg" alt="">
+                        <span class="animations scroll" style="--i:2;"></span>
                     </a>
+
+
+
+                    <div class="box-projet">
                         <div class="projet-content">
-                            <div class="content">
+                            <div class="projet">
                                 <h3 class="title">Ohmyfood</h3>
-                                <p>Description du projet 2...
-                                    ndoqcjio,pv;cioe,cfkdpodepk
+                                <p>Ohmyfood est une plateforme en ligne qui propose une expérience gastronomique unique
+                                    en permettant aux utilisateurs de découvrir et de commander des plats créatifs et
+                                    savoureux directement auprès de restaurants sélectionnés. </p>
+                                <p>Le site offre une interface conviviale et intuitive où les utilisateurs peuvent
+                                    explorer une sélection diversifiée de menus, découvrir des plats exquis et passer
+                                    leurs commandes en toute simplicité.</p>
+                                <p>Grâce à Ohmyfood, les utilisateurs peuvent parcourir une variété de restaurants
+                                    proposant une cuisine raffinée, allant des entrées délicates aux desserts gourmands.</p>
+                                    <p>Chaque restaurant présente ses spécialités culinaires avec des descriptions
+                                    détaillées, des images attrayantes et des prix transparents, offrant ainsi aux
+                                    utilisateurs une expérience de navigation immersive et engageante.</p>
+                                <p>Le site Ohmyfood se distingue par son interface visuellement attrayante, son design
+                                    épuré et son contenu éditorial soigné, offrant aux utilisateurs une expérience
+                                    culinaire en ligne enrichissante et inspirante.
+                                    En plus de la commande de repas, Ohmyfood propose également des fonctionnalités
+                                    telles que la recherche de restaurants par emplacement, la consultation des avis et
+                                    évaluations des utilisateurs, ainsi que la possibilité de devenir partenaire ou de
+                                    proposer un restaurant sur la plateforme.</p>
+                                <p>Technologie utilisée :</p>
+                                <p>Ohmyfood utilise une combinaison de technologies pour offrir une expérience
+                                    utilisateur fluide et immersive : </p>
+                                <p>HTML/CSS :</p>
+                                <p>La structure et la présentation du site sont définies à l'aide de HTML pour le
+                                    contenu et de CSS pour la mise en forme et le style.
+                                </p>
+                                <p>JavaScript :</p>
+                                <p>Le site utilise JavaScript pour ajouter des fonctionnalités interactives telles que
+                                    la navigation dynamique, la gestion des événements utilisateur et l'amélioration de
+                                    l'expérience utilisateur.
+                                </p>
+                                <p>Sass :</p>
+                                <p>Ohmyfood utilise Sass, un préprocesseur CSS, pour simplifier et organiser le code
+                                    CSS, en utilisant des fonctionnalités telles que les variables, les mixins et les
+                                    imports.</p>
+                                <p>FontAwesome :</p>
+                                <p>Pour les icônes, le site intègre FontAwesome, une bibliothèque d'icônes vectorielles.</p>
+                                <p>Google Fonts :</p>
+                                <p>Pour les polices de caractères, Ohmyfood utilise Google Fonts pour offrir une variété
+                                    de styles de police et garantir une typographie attrayante et lisible. </p>
+                                <p>Responsive Design :</p>
+                                <p>Le site est conçu avec une approche de conception réactive, assurant une expérience
+                                    utilisateur optimale sur une gamme de dispositifs, des ordinateurs de bureau aux
+                                    smartphones. </p>
+                                <p>En combinant ces technologies, Ohmyfood crée une plateforme en ligne moderne,
+                                    intuitive et esthétiquement plaisante, offrant une expérience culinaire numérique de
+                                    haute qualité à ses utilisateurs.
                                 </p>
                             </div>
                         </div>
+                        <span class="animations scroll" style="--i:3;"></span>
+                    </div>
                 </div>
 
 
-                <div class="projet">
-                  
-                    <a href="https://hawaou12.github.io/Nina-Carduci/" target="_blank">
-                        <img src="./assets/image/ninacarducci.jpg" alt="">
+                <div class="projet-colum">
+
+                    <a href=" https://github.com/Hawaou12/kasa.git" target="_blank">
+                        <img src="/assets/image/kasa.jpg" alt="">
+                        <span class="animations scroll" style="--i:2;"></span>
                     </a>
+
+
+                    <div class="box-projet">
                         <div class="projet-content">
-                            <div class="content">
-                                <h3 class="title">Nina-Carduci</h3>
-                                <p>Description du projet 2...
-                                    djndodkozeifjkdojldjadlkdklds
+                            <div class="projet">
+                                <h3 class="title">Kasa</h3>
+                                <p>
+                                    Kasa est un site web dédié à la location d'appartements de vacances.
+                                    Avec une interface conviviale et des fonctionnalités bien conçues, Kasa offre aux
+                                    utilisateurs la possibilité de parcourir une large sélection d'appartements
+                                    disponibles à la location pour leurs prochaines vacances.
+
+                                      <p>Le site propose une variété d'options d'hébergement dans différentes destinations,
+                                    permettant aux utilisateurs de trouver facilement l'endroit idéal pour leur séjour.</p>
+                                    <p>En plus de la recherche d'appartements, Kasa offre également des fonctionnalités
+                                    telles que la visualisation des détails des appartements, la réservation en ligne,
+                                    et la consultation des avis des utilisateurs pour aider les voyageurs à prendre des
+                                    décisions éclairées.
+                                </p>
+                                <p>Technologies utilisées :</p>
+                                <p>Le site Kasa est construit en utilisant les technologies suivantes :</p>
+                                <p>React :</p>
+                                <p>Kasa est une application web basée sur React, une bibliothèque JavaScript populaire
+                                    pour la construction d'interfaces utilisateur interactives.
+                                    React permet de créer des composants réutilisables et facilite la gestion de l'état
+                                    de l'application.</p>
+                                <p>React Router DOM :</p>
+                                <p>React Router dom est utilisé pour la gestion de la navigation dans l'application
+                                    Kasa.
+                                    Cette bibliothèque permet de définir des routes pour chaque page de l'application et
+                                    de naviguer entre elles de manière fluide.</p>
+                                <p>HTML et CSS :</p>
+                                <p>Les langages HTML et CSS sont utilisés pour la structure et le style de l'interface
+                                    utilisateur de Kasa.
+                                    HTML est utilisé pour définir la structure des différentes pages du site, tandis que
+                                    CSS est utilisé pour styliser les éléments et rendre l'interface utilisateur attrayante et conviviale.
+                                </p>
+                                <p>JavaScript (ES6+) :</p>
+                                <p> JavaScript est utilisé pour ajouter des fonctionnalités interactives à l'interface
+                                    utilisateur de Kasa.
+                                    Des fonctionnalités telles que la gestion des événements, la manipulation du DOM et
+                                    les requêtes réseau sont implémentées en utilisant JavaScript moderne (ES6+).
+                                </p>
+                                <p>SCSS :</p>
+                                <p>kasa utilise SCSS (Sassy CSS) pour écrire des feuilles de style CSS plus maintenables
+                                    et extensibles.
+                                    SCSS permet d'utiliser des fonctionnalités avancées telles que les variables, les
+                                    mixins et les fonctions, ce qui facilite la gestion des styles à grande échelle.
+                                </p>
+                                <p>En combinant ces technologies, Kasa offre une expérience utilisateur fluide et
+                                    agréable, tout en fournissant les fonctionnalités nécessaires pour rechercher,
+                                    visualiser et réserver des appartements de vacances en ligne.
                                 </p>
                             </div>
                         </div>
+                        <span class="animations scroll" style="--i:3;"></span>
                     </div>
+                </div>
 
             </div>
         </section>
 
+
+
         <!-- correspondance  -->
         <section class="contact" id="contact">
-            <h2 class="heading">Contactez <span>Moi! </span></h2>
+            <h2 class="heading">Contactez <span>Moi! </span> <span class="animations scroll" style="--i:1;"></span></h2>
+            <div class="contact-row">
+                <div class="contact-colum">
+                    <div class="box-contact">
+                        <div class="contact-content">
+                            <div class="contacte">
+                                <p>Nom/Prénom : BAH HAWAOU</p>
+                                <p>Adresse : 121/123 Rue de Picpus, 75012 Paris, France</p>
+                                <p>Email : hawaoubah@yahoo.fr</p>
+                                <p>Téléphone : 0652780547</p>
+                            </div>
+                        </div>
+                        <span class="animations scroll" style="--i:5;"></span>
+                    </div>
+                </div>
+            </div>
 
-            <form action="#">
-                <div class="input-box">
-                    <div class="input-file">
-                        <input type="text" placeholder="nom" required><br>
-                        <span class="focus"><span>
-                    </div>
-                    <div class="input-file">
-                        <input type="text" placeholder="adresse email" required><br>
-                        <span class="focus"><span>
-                    </div>
-                </div>
-
-                <div class="input-box">
-                    <div class="input-file">
-                        <input type="number" placeholder="numéro Téléphone" required><br>
-                        <span class="focus"><span>
-                    </div>
-                    <div class="input-file">
-                        <input type="text" placeholder="objet email" required><br>
-                        <span class="focus"><span>
-                    </div>
-                </div>
-                <div class="textarea-file">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="votre message" required></textarea>
-                    <span class="focus"></span>
-                </div>
-                <div class="btn-box btns">
-                    <button type="submit" class="btn">Submit</button>
-                </div>
-
-            </form>
         </section>
+
+        <!-- correspondance  -->
+        <!-- 
+ <section class="contact" id="contact">
+    <h2 class="heading">Contactez <span>Moi! </span></h2>
+
+    <form action="#">
+        <div class="input-box">
+            <div class="input-file">
+                <input type="text" placeholder="nom" required><br>
+                <span class="focus"><span>
+            </div>
+            <div class="input-file">
+                <input type="text" placeholder="adresse email" required><br>
+                <span class="focus"><span>
+            </div>
+        </div>
+
+        <div class="input-box">
+            <div class="input-file">
+                <input type="number" placeholder="numéro Téléphone" required><br>
+                <span class="focus"><span>
+            </div>
+            <div class="input-file">
+                <input type="text" placeholder="objet email" required><br>
+                <span class="focus"><span>
+            </div>
+        </div>
+        <div class="textarea-file">
+            <textarea name="" id="" cols="30" rows="10" placeholder="votre message" required></textarea>
+            <span class="focus"></span>
+        </div>
+        <div class="btn-box btns">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+
+    </form>
+ </section> -->
+
+
     </main>
     <!-- section footer -->
     <footer class="footers">
         <div class="footer">
             <p>Copyright & Copie 2024 par HB | Tous Droits Reservés</p>
+            <span class="animations scroll" style="--i:1;"></span>
         </div>
         <div class="icon-footer">
             <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            <span class="animations scroll" style="--i:3;"></span>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
