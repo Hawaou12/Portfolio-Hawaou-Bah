@@ -555,43 +555,33 @@ span {
 .competence-colum:nth-child(1) .competence-content .progret:nth-child(1) .star span {
     width: 95%;
 }
-
 .competence-colum:nth-child(1) .competence-content .progret:nth-child(2) .star span {
     width: 85%;
 }
-
 .competence-colum:nth-child(1) .competence-content .progret:nth-child(3) .star span {
     width: 45%;
 }
-
 .competence-colum:nth-child(1) .competence-content .progret:nth-child(4) .star span {
     width: 50%;
 }
-
 .competence-colum:nth-child(2) .competence-content .progret:nth-child(1) .star span {
     width: 85%;
 }
-
 .competence-colum:nth-child(2) .competence-content .progret:nth-child(2) .star span {
     width: 85%;
 }
-
 .competence-colum:nth-child(2) .competence-content .progret:nth-child(3) .star span {
     width: 75%;
 }
-
 .competence-colum:nth-child(2) .competence-content .progret:nth-child(4) .star span {
     width: 95%;
 }
-
 .competence-colum:nth-child(2) .competence-content .progret:nth-child(5) .star span {
     width: 95%;
 }
-
 .competence-colum:nth-child(2) .competence-content .progret:nth-child(6) .star span {
     width: 95%;
 }
-
 .competence-colum:nth-child(2) .competence-content .progret:nth-child(7) .star span {
     width: 95%;
 }
@@ -841,7 +831,6 @@ span {
     width: 100%;
 }
 
-
 .logo .animations,
 .navbar .animations,
 #menu .animations,
@@ -966,7 +955,6 @@ section:nth-child(odd) .animations.scroll,
         right: 40%;
         pointer-events: none;
         background: var(--bg-color);
-        /* opacity: .6; */
     }
 
     .home-contenair {
